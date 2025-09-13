@@ -20,25 +20,13 @@ public final class Constants {
   public static final class turretConstants {
     public static final int traverseMotorPort = 0;
     public static final int tiltMotorPort = 1;
-
-    //public static final int leftLimitSwitchPort = 0; 
-    //public static final int rightLimitSwitchPort = 1;
-
-    public static final double maximumAgeOfNetworkTableEntry = 0.01;
   }
 
-  public static class cannonConstants {
-    public static enum statusStates{ //Using an enum because it improves readability. 
-      READYTOSHOOT, 
-      SHOOTING, 
-      EMPTY
-    }
-    
+  public static class cannonConstants {    
     public static final double waitTime = 0.25; //The time to keep the solenoid open in seconds
+    public static final double waitTime2 = 2.0; //The time to keep all solenoids closed in seconds
     public static final int numberOfShooters = 6;
-    public static final int[] cannonPorts = {1, 2, 3, 4, 5, 6};
-    public static final boolean[] loadedBarrels = {true, true, true, 
-                                                 true, true, true};
+    public static final int[] cannonPorts = {0, 1, 2, 3, 4, 5};
   }
 
   

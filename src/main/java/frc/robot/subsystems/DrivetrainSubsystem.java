@@ -16,7 +16,6 @@ public class DrivetrainSubsystem extends SubsystemBase{
         m_rearLeft = new Spark(motorPorts[1]);
         m_frontLeft.addFollower(m_rearLeft);
         m_frontLeft.setInverted(motorInverts[0]);
-        
 
         m_frontRight = new Spark(motorPorts[2]);
         m_rearRight = new Spark(motorPorts[3]);
@@ -24,7 +23,6 @@ public class DrivetrainSubsystem extends SubsystemBase{
         m_frontRight.setInverted(motorInverts[1]);
 
         m_DifferentialDrive = new DifferentialDrive(m_frontLeft, m_frontRight);
-
     }
 
     public void arcadeDrive(double fowardSpeed, double rotateSpeed){
