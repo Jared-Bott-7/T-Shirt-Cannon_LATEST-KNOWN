@@ -16,7 +16,7 @@ public class TurretSubsytem extends SubsystemBase{
     }
 
     public void setMotorSpeeds(double x, double y){
-        m_traverseMotor.set(x);
+        m_traverseMotor.set(-x);
         m_traverseMotor.feed();
         m_tiltMotor.set(y);
         m_tiltMotor.feed();

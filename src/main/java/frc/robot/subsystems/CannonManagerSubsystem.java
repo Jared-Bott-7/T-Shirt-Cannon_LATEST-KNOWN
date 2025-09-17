@@ -36,6 +36,7 @@ public class CannonManagerSubsystem extends SubsystemBase{
     //This function finds the next loaded barrel and fires it, this includes wrapping to the 1st barrel if needed. 
     public void cycleAndShoot() {
         currentShooterIndex = getNextBarrel();
+        System.out.println(currentShooterIndex);
         m_shooters[currentShooterIndex].launchShirt(currentShooterIndex);
     }
 

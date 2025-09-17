@@ -18,13 +18,13 @@ public final class Constants {
   }
 
   public static final class turretConstants {
-    public static final int traverseMotorPort = 0;
-    public static final int tiltMotorPort = 1;
+    public static final int traverseMotorPort = 1;
+    public static final int tiltMotorPort = 0;
   }
 
   public static class cannonConstants {    
     public static final double waitTime = 0.25; //The time to keep the solenoid open in seconds
-    public static final double waitTime2 = 2.0; //The time to keep all solenoids closed in seconds
+    public static final double waitTime2 = 6.0; //The time to keep all solenoids closed in seconds
     public static final int numberOfShooters = 6;
     public static final int[] cannonPorts = {0, 1, 2, 3, 4, 5};
   }
@@ -32,7 +32,7 @@ public final class Constants {
   
   public static class drivetrainConstants {
     public static final int[] motorPorts = {6, 7, 8, 9};
-    public static final Boolean[] motorInverts = {true, false}; 
+    public static final Boolean[] motorInverts = {false, true}; 
   }
 
 }

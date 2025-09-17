@@ -16,10 +16,12 @@ public class CannonSubsystem extends SubsystemBase{
 
     public void closeSolenoid(){
         m_relay.set(false);
+        System.out.println("close");
     }
 
     public void launchShirt(int outputPin){
         m_relay.set(true);
+        System.out.println("open");
     }
 
 }
